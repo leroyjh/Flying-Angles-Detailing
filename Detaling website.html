@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flying Angles Detailing - Shine Like Never Before</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000000; /* Pure black background for the body */
+            color: #e0e0e0; /* Light gray text for contrast */
+        }
+        .text-orange-500 {
+            color: #f97316; /* Tailwind orange-500 */
+        }
+        .bg-orange-500 {
+            background-color: #f97316;
+        }
+        .border-orange-500 {
+            border-color: #f97316;
+        }
+        .btn-primary {
+            /* Adjusted padding to encourage a rounder shape, and added flex for internal centering */
+            @apply inline-flex items-center justify-center px-6 py-4 rounded-full text-white font-semibold transition duration-300 ease-in-out;
+            background: linear-gradient(90deg, #f97316, #ea580c); /* Orange gradient */
+            box-shadow: 0 4px 15px rgba(249, 115, 22, 0.4);
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(249, 115, 22, 0.6);
+        }
+        /* Styling for the Google Form iframe container */
+        .google-form-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+            margin-top: 2.5rem; /* Equivalent to mt-10 */
+        }
+        .google-form-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-radius: 0.75rem; /* rounded-xl */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation - Added sticky, top-0, and z-50 for stickiness -->
+    <header class="bg-black shadow-lg py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Logo in Header -->
+            <a href="#" class="flex items-center space-x-3">
+                <img src="https://i.imgur.com/60cwFkI.png" alt="Flying Angles Detailing Logo" class="h-16 w-auto rounded-lg">
+                <span class="text-3xl font-bold text-orange-500 hidden sm:block">Flying Angles Detailing</span>
+            </a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="text-white hover:text-orange-500 transition duration-300">About Us</a></li>
+                    <li><a href="#services" class="text-white hover:text-orange-500 transition duration-300">Services</a></li>
+                    <li><a href="#gallery" class="text-white hover:text-orange-500 transition duration-300">Gallery</a></li>
+                    <li><a href="#contact" class="text-white hover:text-orange-500 transition duration-300">Contact</a></li>
+                    <li><a href="#book" class="text-white hover:text-orange-500 transition duration-300">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-black text-white py-24 text-center overflow-hidden">
+        <!-- Hero background image updated -->
+        <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('https://i.imgur.com/60cwFkI.png');"></div>
+        <div class="relative z-10 container mx-auto px-4">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+                Experience the <span class="text-orange-500">Ultimate Shine</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto opacity-90">
+                Transform your vehicle with our premium auto detailing services. Where perfection meets passion.
+            </p>
+            <!-- Button uses btn-primary class and is centered -->
+            <a href="#book" class="btn-primary text-lg block mx-auto w-fit">Book Your Transformation</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-black">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-8 text-white">About Flying Angles Detailing</h2>
+            <div class="max-w-3xl mx-auto text-gray-300 text-lg leading-relaxed">
+                <p class="mb-4">
+                    Welcome to <span class="text-orange-500 font-semibold">Flying Angles Detailing</span>, a brand new mobile detailing company proudly serving the New England area! We're not just detailers; we're two individuals with an unwavering passion for cars, dedicated to bringing out the absolute best in your vehicle.
+                </p>
+                <p class="mb-4">
+                    Our journey began with a shared love for automobiles and a commitment to meticulous care. As an active duty military member and my partner, we understand the importance of discipline, precision, and dedication – values we pour into every vehicle we touch.
+                </p>
+                <p>
+                    We believe that every car deserves to shine, and our mobile service ensures that top-tier detailing comes directly to your doorstep. Experience the difference that passion, precision, and professional care can make.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">Our Signature Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1: The Quick Spark -->
+                <div class="bg-gray-800 rounded-xl shadow-lg p-8 transform hover:scale-105 transition duration-300 ease-in-out border border-transparent hover:border-orange-500">
+                    <h3 class="text-3xl font-bold text-orange-500 mb-4">The Quick Spark</h3>
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        Perfect for a quick refresh! This package focuses on essential interior and exterior cleaning to bring back that fresh look without the deep dive. Ideal for vehicles that just need a touch-up.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-400 space-y-2">
+                        <li>Exterior Wash & Dry</li>
+                        <li>Interior Vacuum</li>
+                        <li>Dashboard Wipe Down</li>
+                        <li>Window Cleaning (Exterior)</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2: The Modern Pack (Most Popular) -->
+                <div class="bg-gray-800 rounded-xl shadow-lg p-8 transform hover:scale-105 transition duration-300 ease-in-out border-4 border-orange-500 relative">
+                    <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">Most Popular!</span>
+                    <h3 class="text-3xl font-bold text-orange-500 mb-4">The Modern Pack</h3>
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        Our most sought-after package, offering a comprehensive rejuvenation for your vehicle, inside and out. Experience a deep clean that restores your car's showroom appeal.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-400 space-y-2">
+                        <li>Full Interior & Exterior Detailing</li>
+                        <li>Tire & Rim Deep Clean</li>
+                        <li>Streak-Free Window Cleaning (Interior & Exterior)</li>
+                        <li>Pet Hair Removal (if needed)</li>
+                        <li>Carpet & Upholstery Shampoo/Steam</li>
+                        <li>Protective Sealant Application</li>
+                        <li>Maintenance Check & Treatment</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3: The Disaster Plan -->
+                <div class="bg-gray-800 rounded-xl shadow-lg p-8 transform hover:scale-105 transition duration-300 ease-in-out border border-transparent hover:border-orange-500">
+                    <h3 class="text-3xl font-bold text-orange-500 mb-4">The Disaster Plan</h3>
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        When your vehicle has seen better days, our Disaster Plan steps in. This intensive package is designed for cars in extremely rough condition, requiring extensive time and specialized techniques.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-400 space-y-2">
+                        <li>Heavy-Duty Interior Deep Clean</li>
+                        <li>Stain & Odor Removal</li>
+                        <li>Headliner Cleaning</li>
+                        <li>Comprehensive Exterior Restoration</li>
+                        <li>Extended Service Time</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-center text-gray-400 mt-10 text-lg italic">
+                <span class="text-orange-500 font-semibold">Please Note:</span> Prices for all services, especially the Disaster Plan, will be quoted upon inspection and may vary based on the vehicle's condition and severity of dirt/damage. **Please ensure water and power access is available at the detailing location.**
+            </p>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section id="gallery" class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">Our Masterpieces in Motion</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Photo 1: Before - Reverted to generic placeholder for display reliability -->
+                <div class="relative rounded-lg overflow-hidden shadow-lg group">
+                    <img src="https://placehold.co/600x400/333/FFF?text=Before+1" alt="Detailed Car 1 - Before" class="w-full h-auto object-cover transform group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-75 flex items-end p-4 transition-opacity duration-300">
+                        <p class="text-white text-sm font-semibold">Before</p>
+                    </div>
+                </div>
+                <!-- Photo 2: After - Reverted to generic placeholder for display reliability -->
+                <div class="relative rounded-lg overflow-hidden shadow-lg group">
+                    <img src="https://placehold.co/600x400/333/FFF?text=After+2" alt="Detailed Car 2 - After" class="w-full h-auto object-cover transform group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-75 flex items-end p-4 transition-opacity duration-300">
+                        <p class="text-white text-sm font-semibold">After</p>
+                    </div>
+                </div>
+                <!-- Photo 3: Before - Reverted to generic placeholder for display reliability -->
+                <div class="relative rounded-lg overflow-hidden shadow-lg group">
+                    <img src="https://placehold.co/600x400/333/FFF?text=Before+3" alt="Detailed Car 3 - Before" class="w-full h-auto object-cover transform group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-75 flex items-end p-4 transition-opacity duration-300">
+                        <p class="text-white text-sm font-semibold">Before</p>
+                    </div>
+                </div>
+                <!-- Photo 4: After - Reverted to generic placeholder for display reliability -->
+                <div class="relative rounded-lg overflow-hidden shadow-lg group">
+                    <img src="https://placehold.co/600x400/333/FFF?text=After+4" alt="Detailed Car 4 - After" class="w-full h-auto object-cover transform group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-75 flex items-end p-4 transition-opacity duration-300">
+                        <p class="text-white text-sm font-semibold">After</p>
+                    </div>
+                </div>
+                <!-- Photo 5: Before - Reverted to generic placeholder for display reliability -->
+                <div class="relative rounded-lg overflow-hidden shadow-lg group">
+                    <img src="https://placehold.co/600x400/333/FFF?text=Before+5" alt="Detailed Car 5 - Before" class="w-full h-auto object-cover transform group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-75 flex items-end p-4 transition-opacity duration-300">
+                        <p class="text-white text-sm font-semibold">Before</p>
+                    </div>
+                </div>
+                <!-- Photo 6: After - Reverted to generic placeholder for display reliability -->
+                <div class="relative rounded-lg overflow-hidden shadow-lg group">
+                    <img src="https://placehold.co/600x400/333/FFF?text=After+6" alt="Detailed Car 6 - After" class="w-full h-auto object-cover transform group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-75 flex items-end p-4 transition-opacity duration-300">
+                        <p class="text-white text-sm font-semibold">After</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="py-20 bg-black">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-8 text-white">Get In Touch</h2>
+            <p class="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
+                Have questions or need a custom quote? We're here to help!
+            </p>
+            <div class="flex flex-wrap justify-center gap-8">
+                <!-- Location: Changed to Mobile Detailing Service -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg flex-1 min-w-[280px] max-w-sm border border-transparent hover:border-orange-500 transition duration-300">
+                    <h3 class="text-2xl font-semibold text-orange-500 mb-3">Service Area</h3>
+                    <p class="text-gray-300">We are a fully mobile detailing service! We come to you.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg flex-1 min-w-[280px] max-w-sm border border-transparent hover:border-orange-500 transition duration-300">
+                    <h3 class="text-2xl font-semibold text-orange-500 mb-3">Phone</h3>
+                    <p class="text-gray-300"><a href="tel:+15551234567" class="hover:underline">(816)601-5783</a></p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg flex-1 min-w-[280px] max-w-sm border border-transparent hover:border-orange-500 transition duration-300">
+                    <h3 class="text-2xl font-semibold text-orange-500 mb-3">Email</h3>
+                    <p class="text-gray-300"><a href="mailto:info@flyinganglesdetailing.com" class="hover:underline">flyingangeldetailing@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section with Google Form Embed -->
+    <section id="book" class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-8 text-white text-center">Schedule Your Appointment</h2>
+            <p class="text-gray-300 text-lg mb-10 max-w-2xl mx-auto text-center">
+                Ready for that showroom shine? Please fill out our form below to book your next detailing appointment!
+            </p>
+
+            <div class="max-w-3xl mx-auto google-form-container bg-gray-800 rounded-xl shadow-lg">
+                <!-- Google Form Embed URL - Reverted -->
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeqlcyw8DWMIjZ8qdeCG9AASJ8MZpqPbrvWyIw6UaIGqxQNZA/viewform?usp=header" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            </div>
+
+            <p class="text-gray-500 text-sm mt-4 text-center">
+                (The form will load directly on this page.)
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-8 text-center text-gray-500 text-sm">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2025 Flying Angles Detailing. All rights reserved.</p>
+            <p class="mt-2">Designed with passion for the perfect detail.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
